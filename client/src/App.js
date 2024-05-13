@@ -15,7 +15,7 @@ function App() {
                 return res.json();
             })
             .then(data => {
-                setMessage(data.message);
+                setMessage(data.members);
             })
             .catch(error => {
                 console.error('There was a problem with the fetch operation: ', error);
